@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="../src/style.css" rel="stylesheet"/>
+    <script defer src="../src/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="vStack content">
+        <h3>Search:</h3>
+        <form class="vStack search">
+            <div class="hStack">
+                <h4 class="short">Title:</h4>
+                <input type="text" name="" id="titleInput">
+            </div>
+            <div class="hStack">
+                <h4 class="short">Type:</h4>
+                <select name="types" id="typeInput">
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episode</option>
+                </select>
+            </div>
+            <button type="submit" id="submitButton">Search</button>
+        </form>
+        <div class="films vStack hidden" id="filmsContainer">
+            <h3>Films:</h3>
+            <div class="hStack films" id="films"></div>
+        </div>
+        <div class="progress-loader hidden" id="progressLoader"></div>
+    </div>
+</div>
+</body>
+</html>
